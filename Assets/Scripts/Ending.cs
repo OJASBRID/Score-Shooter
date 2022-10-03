@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ending : MonoBehaviour
 {
-    float time = 120;
+    public float time = 120f;
 
     // Update is called once per frame
     void Update()

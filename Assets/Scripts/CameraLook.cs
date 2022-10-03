@@ -8,6 +8,8 @@ public class CameraLook : MonoBehaviour
     public Transform orientation;
     public float sensex;
     public float sensey;
+    public Canvas canvas;
+    public Canvas canvas1;
     float xrotation;
     float yrotation;
 
@@ -33,6 +35,15 @@ public class CameraLook : MonoBehaviour
         transform.rotation = Quaternion.Euler(xrotation,yrotation,0);
         orientation.rotation = Quaternion.Euler(0,yrotation,0);
 
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 0f;
+            canvas.gameObject.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            canvas1.gameObject.SetActive(false);
+        }
 
         
     }
