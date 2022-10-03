@@ -1,4 +1,4 @@
-
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class Shooting : MonoBehaviour
@@ -12,6 +12,9 @@ public class Shooting : MonoBehaviour
     public GameObject red;
     public GameObject blue;
     public ColourChange cls;
+
+    public AudioSource src;
+    public ParticleSystem ps;
 
     private void Start()
     {
@@ -28,7 +31,9 @@ public class Shooting : MonoBehaviour
     }
 
     public void shoot()
-    {
+    {   src.Play();
+        ps.Play();
+        
         RaycastHit hit;
         if(Physics.Raycast(fpscam.transform.position,fpscam.transform.forward, out hit))
         {

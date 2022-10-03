@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 296924685}
   - component: {fileID: 296924687}
   - component: {fileID: 296924686}
+  - component: {fileID: 296924688}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -520,7 +521,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.857391, y: 24.1867}
+  m_AnchoredPosition: {x: 86, y: 24.1867}
   m_SizeDelta: {x: 553.7148, y: 48.3734}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296924686
@@ -565,6 +566,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296924684}
   m_CullTransparentMesh: 1
+--- !u!114 &296924688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296924684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8edf89bb22db0024582e149286bf69ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 296924686}
 --- !u!1 &454012423
 GameObject:
   m_ObjectHideFlags: 0
