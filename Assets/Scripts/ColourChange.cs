@@ -41,7 +41,7 @@ public class ColourChange : MonoBehaviour
     }
 
     public void colorchange()
-    { if (diff > 0.8)
+    { if (diff > 1.2f)
         { 
         diff = diff / x;
         }
